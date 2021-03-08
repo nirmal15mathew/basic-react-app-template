@@ -1,5 +1,25 @@
-.App {
-  height: 100vh;
-  background-color: #282c34;
-  color: #61dafb;
+* {
+  /* CSS HEX */
+  --red-orange-color-wheel: #f15025ff;
+  --white: #ffffffff;
+  --platinum: #e6e8e6ff;
+  --light-gray: #ced0ceff;
+  --eerie-black: #191919ff;
+  --color-mode: "dark";
+}
+@media (prefers-color-scheme: dark){
+  
+  .App {
+    height: 100vh;
+    background-color: #282c34;
+    color: #61dafb;
+  }
+}
+
+@media (prefers-color-scheme: light){
+  .App {
+    height: 100vh;
+    background-color: var(--platinum);
+    color: var(--eerie-black);
+  }
 }

@@ -1,15 +1,20 @@
 import { useRef } from "react"
+
 function LoginForm(props) {
+    // using ref for handling inputs
     const username  = useRef(null)
     const password = useRef(null)
+
+    // the function for setting the credentials according to input
     const { setCreds } = props
     const submitCreds = (e) => {
+        // for preventing the page from refreshing
         e.preventDefault()
         let creds = {
             username: username.current.value,
             password: password.current.value
         }
-        setCreds(creds)
+        setCreds(creds) // send credentials to the parent component
     }
     return (
         <form>
