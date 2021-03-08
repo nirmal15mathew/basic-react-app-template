@@ -1,0 +1,32 @@
+form.login-form {
+    margin: auto;
+    width: 40vw;
+    min-width: 350px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.1);
+    align-self: center;
+    border-radius: 0.3em;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+fieldset.field {
+    border-radius: 0.3em;
+    border: 0.05em solid var(--platinum);
+    padding: 0;
+}
+legend.field-title {
+    margin-left: 0.4em;
+}
+input {
+    background-color: transparent;
+    border: 0;
+    padding: 0.5em;
+    outline: 0;
+}
+
+.field input {
+    width: fill;
+    font-size: 1em;
+    color: inherit;
+}
