@@ -6,16 +6,33 @@
   --light-gray: #ced0ceff;
   --eerie-black: #191919ff;
   --color-mode: "dark";
+  
 }
 .App {
   height: 100vh;
   display: flex;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  background-color: var(--red-orange-color-wheel);
+  padding: 0.5em 0.7em;
+  border: 0;
+  outline: 0;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+  color: var(--platinum);
+  border-radius: 0.15em;
+  cursor: pointer;
 }
 @media (prefers-color-scheme: dark){
   
   .App {
     background-color: var(--eerie-black);
     color: var(--platinum);
+    --background-color: var(--eerie-black);
+    --color: var(--platinum);
   }
 }
 
@@ -23,5 +40,7 @@
   .App {
     background-color: var(--platinum);
     color: var(--eerie-black);
+    --background-color: var(--platinum);
+    --color: var(--eerie-black);
   }
 }

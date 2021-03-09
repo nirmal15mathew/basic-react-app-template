@@ -10,13 +10,14 @@ import Profile from "../pages/Profile";
 function SignedIn(props) {
   // for signing out and to get the current logged in user
   const { user, setLogin } = props;
+  const headerMenu = [
+    <Link to="/">Home</Link>,
+    <Link to="/dashboard">Dashboard</Link>,
+    <Link to="/profile">Profile</Link>,
+  ];
   return (
     <AppContainer>
-      <AppHeader>
-        <Link to="/">Home</Link>
-        <Link to="/dashboard">Dashboard</Link>
-        <Link to="/profile">Profile</Link>
-      </AppHeader>
+      <AppHeader appTitle={"Neus"} appMenu={headerMenu}></AppHeader>
       <Switch>
         <Route path="/" exact>
           <Home></Home>

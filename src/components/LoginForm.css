@@ -1,7 +1,8 @@
 form.login-form {
     margin: auto;
-    width: 40vw;
+    width: 30vw;
     min-width: 350px;
+    max-width: 400px;
     padding: 1em;
     display: flex;
     flex-direction: column;
@@ -12,8 +13,10 @@ form.login-form {
 }
 fieldset.field {
     border-radius: 0.3em;
-    border: 0.05em solid var(--platinum);
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 0;
+    margin: 0.3em 0;
 }
 legend.field-title {
     margin-left: 0.4em;
@@ -29,4 +32,9 @@ input {
     width: fill;
     font-size: 1em;
     color: inherit;
+}
+.submit-button {
+    width: 25%;
+    padding: 0.7em 1.2em;
+    margin-left: auto;
 }

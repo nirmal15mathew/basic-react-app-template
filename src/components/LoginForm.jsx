@@ -20,12 +20,10 @@ function LoginForm(props) {
   return (
     <form className="login-form">
       <fieldset className="field username">
-        <legend className="field-title username">Username</legend>
-        <input type="text" required ref={username}></input>
+        <input type="text" required ref={username} placeholder="Username"></input>
       </fieldset>
       <fieldset className="field password">
-        <legend className="field-title password">Password</legend>
-        <input type="password" required ref={password}></input>
+        <input type="password" required ref={password} placeholder="Password"></input>
       </fieldset>
       <button onClick={(e) => submitCreds(e)} className="button submit-button">
         Login

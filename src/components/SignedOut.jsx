@@ -12,8 +12,8 @@ function SignedOut(props) {
   useEffect(() => {
     // only for debugging
     if (
-      credentials.username === "yourusername" &&
-      credentials.password === "yourpassword"
+      credentials.username === "nirmal15mathew" &&
+      credentials.password === "n2i0r0m5al"
     ) {
       setLogin(true);
       setUser(credentials.username);
